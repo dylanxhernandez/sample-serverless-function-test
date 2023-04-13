@@ -35,3 +35,6 @@ Follow the prompts, for a typical static site there are no build commands, deplo
 
 Sample Site Here:
 https://serverless-test-sample.netlify.app
+
+Direct Function Link:
+https://serverless-test-sample.netlify.app/.netlify/functions/hello-world
