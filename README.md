@@ -1,6 +1,6 @@
 # Up and Running with Serverless Functions
 
-1. Install netlify-cli
+Install netlify-cli
 
 Run the following command:
 ```
@@ -9,7 +9,7 @@ npm-install netlify-cli --global
 Note, verify that nodejs and npm are installed on your system.
 
 
-2. You can verify the installation of netlify-cli by running the following:
+You can verify the installation of netlify-cli by running the following:
 ```
 netlify --version
 ```
@@ -19,7 +19,7 @@ ntl --version
 ```
 
 
-3. Setup your netlify account and run the following command:
+Setup your netlify account and run the following command:
 ```
 ntl login
 ```
@@ -27,8 +27,11 @@ Follow the prompts.
 
 
 
-4. Once you are logged in, run the init command:
+Once you are logged in, run the init command:
 ```
 ntl init
 ```
 Follow the prompts, for a typical static site there are no build commands, deployment will be via public folder and the functions will be stored in 'netlify/functions'. In addition, if a netlify.toml file hasn't been created, then answer Y to the prompt to create one.
+
+Sample Site Here:
+https://serverless-test-sample.netlify.app
