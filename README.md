@@ -38,3 +38,6 @@ https://serverless-test-sample.netlify.app
 
 Direct Function Link:
 https://serverless-test-sample.netlify.app/.netlify/functions/hello-world
+
+Sample Redirect Math Link (2+3):
+https://serverless-test-sample.netlify.app/api/arithmetic?op=add&num1=2&num2=3

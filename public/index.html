@@ -9,17 +9,26 @@
 	<body>
 		<button id="fetch-btn">Fetch</button>
 		<p id="response-output">Click fetch to test . . .</p>
-
+		<br/>
+		<button id="math-btn">Sample calculation, 2+3=</button>
+		<p id="response-output-2">?</p>
 		<script>
 			document.addEventListener('DOMContentLoaded', () => {
 				const fetchBtn = document.getElementById('fetch-btn')
+				const mathBtn = document.getElementById('math-btn')
 				const responseText = document.getElementById('response-output')
-
+				const responseText2 = document.getElementById('response-output-2')
 				fetchBtn.addEventListener('click', async () => {
 					const response = await fetch('/.netlify/functions/hello-world').then(
 						response => response.json()
 					)
 					responseText.innerText = JSON.stringify(response)
+				})
+				mathBtn.addEventListener('click', async () => {
+					const response = await fetch('/api/arithmetic?op=add&num1=2&num2=3').then(
+						response => response.json()
+					)
+					responseText2.innerText = JSON.stringify(response)
 				})
 			})
 		</script>
